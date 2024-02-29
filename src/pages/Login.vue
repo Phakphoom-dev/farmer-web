@@ -69,7 +69,7 @@ const onSubmit = handleSubmit(async (values: ILoginForm) => {
 </script>
 
 <template>
-  <section class="bg-gray-50 dark:bg-gray-900">
+  <section class="bg-gradient-to-t from-green-300 to-green-100 h-dvh">
     <div
       class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
     >
@@ -120,6 +120,9 @@ const onSubmit = handleSubmit(async (values: ILoginForm) => {
               <label
                 for="password"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                :class="
+                  !errors.password ? inputClass.label : errorInputClass.label
+                "
                 >Password</label
               >
               <input

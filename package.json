@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "@vee-validate/zod": "^4.12.5",
+    "add": "^2.0.6",
     "axios": "^1.6.7",
     "flowbite": "^2.3.0",
     "jwt-decode": "^4.0.0",
     "vee-validate": "^4.12.5",
     "vue": "^3.4.19",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vue3-easy-data-table": "^1.5.47",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

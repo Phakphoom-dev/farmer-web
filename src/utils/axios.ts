@@ -9,4 +9,11 @@ const api = axios.create({
   },
 });
 
+// Set the AUTH token for any request
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem("farmer-token");
+  config.headers.Authorization = token ? `Bearer ${token}` : "";
+  return config;
+});
+
 export default api;
